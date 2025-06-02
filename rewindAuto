@@ -397,7 +397,7 @@ local modelDropdown = Tabs.AutoFight:AddDropdown("ModelDropdown", {
     Values = modelNames,
     Multi = false,
     Searchable = true,
-    Default = "Destroyer Ducky",
+    Default = modelNames[23] or "",
 })
 
 -- Auto Fight logic
