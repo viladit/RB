@@ -1117,7 +1117,9 @@ local FishSection = Tabs.Fish:AddSection("Auto Fish")
 -- Create toggle for auto fishing
 local AutoFishToggle = Tabs.Fish:AddToggle("AutoFish", {
     Title = "Auto Fish from Anywhere",
-    Description = "This will be much slower when fighting bosses."
+    Description = "This will be much slower when fighting bosses.",
+    Default = true
+
 })
 
 -- Create status paragraph to track what was caught
