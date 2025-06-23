@@ -1105,7 +1105,7 @@ end)
 local UpgradeAllToggle = UpgradeSection:AddToggle("AutoUpgradeAll", {
     Title = "Upgrade All Snacks",
     Description = "Automatically upgrade all available snacks",
-    Default = false
+    Default = true
 })
 
 UpgradeAllToggle:OnChanged(function(Value)
@@ -1360,7 +1360,7 @@ local TrainersSection = Tabs.Main:AddSection("Auto Roll Trainers")
 local AutoRollTrainersToggle = TrainersSection:AddToggle("AutoRollTrainers", {
     Title = "Auto Roll All Crates",
     Description = "Automatically begings to opens all trainer crates",
-    Default = false
+    Default = true
 })
 
 -- Variable to store the loop
@@ -1508,7 +1508,7 @@ end)
 local AuraSection = Tabs.Main:AddSection("Auto Aura")
 
 -- Variable to control the auto roll aura loop
-local autoRollAura = false
+local autoRollAura = true
 
 -- Function to start Auto Roll Aura
 local function startAutoRollAura()
