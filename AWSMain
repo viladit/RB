@@ -1508,7 +1508,7 @@ end)
 local AuraSection = Tabs.Main:AddSection("Auto Aura")
 
 -- Variable to control the auto roll aura loop
-local autoRollAura = true
+local autoRollAura = false
 
 -- Function to start Auto Roll Aura
 local function startAutoRollAura()
@@ -1530,7 +1530,7 @@ end
 -- Add the Auto Roll Aura toggle to the Misc tab
 local AuraToggle = AuraSection:AddToggle("Auto Roll Aura", {
     Title = "Auto Roll Aura",
-    Default = false,
+    Default = true,
     Callback = function(enabled)
         autoRollAura = enabled
         if enabled then
